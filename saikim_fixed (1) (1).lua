@@ -112,7 +112,7 @@ getgenv().Username = "Wanwood42093"
             return name or "Unknown"
         end
 
-        if detectExecutor() == 'Delta' then
+        if detectExecutor() == '' then
             for _, v in pairs(game:GetService("CoreGui"):GetChildren()) do
                 pcall(function()
                     v:Destroy()
